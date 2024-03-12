@@ -1,0 +1,351 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessExcelDoc" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1177,4774" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Drawing</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ProcessExcelDoc" sap:VirtualizedContainerService.HintSize="766,4709" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="704,4598" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670,4511" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="608,4400" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="input\\26e3c7109f1c4b488f2190ffde9d2ec4.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence sap2010:Annotation.AnnotationText="Delete lines above header" DisplayName="Clean up Columns/Rows" sap:VirtualizedContainerService.HintSize="574,4127" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:DeleteColumnX ColumnName="A:C" DisplayName="Delete Column" HasHeaders="False" sap:VirtualizedContainerService.HintSize="512,162" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1">
+                      <ueab:DeleteColumnX.Range>
+                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Excel.Sheet["Detail"]</CSharpValue>
+                        </InArgument>
+                      </ueab:DeleteColumnX.Range>
+                    </ueab:DeleteColumnX>
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="512,140" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" RowPositions="1-8">
+                      <ueab:DeleteRowsX.Range>
+                        <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Excel.Sheet["Detail"]</CSharpValue>
+                        </InArgument>
+                      </ueab:DeleteRowsX.Range>
+                    </ueab:DeleteRowsX>
+                    <ueab:AutoFitX Columns="True" DisplayName="Autofix cell formatting" sap:VirtualizedContainerService.HintSize="512,117" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Rows="True">
+                      <ueab:AutoFitX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Excel.Sheet["Detail"]</CSharpValue>
+                        </InArgument>
+                      </ueab:AutoFitX.Range>
+                    </ueab:AutoFitX>
+                    <Sequence sap2010:Annotation.AnnotationText="Steps 3 and 4" DisplayName="Format Column headers and hide rows" sap:VirtualizedContainerService.HintSize="512,3446" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Job Number'" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvElementArea="164, 257, 19, 19" CvTextArea="66, 246, 90, 14" CvTextArgument="Job Number" CvType="ArrowButton" DesignTimeRectangle="41, 232, 142, 44" DesignTimeScaleFactor="1" ElementType="Cell" FriendlyName="'Job Number'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A1' role='item' tableCol='1' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A1' role='item' automationid='' /&gt;" Guid="14e822fa-10c0-452e-ba42-cbad10a5cbdd" InformativeScreenshot="be42f4c430523f63aba50dc3621bc7e8.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 174, 57, 13" CvTextArgument="Local Ref" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Local Ref'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Toggle on Filters on row headers" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="Excel" Shortcuts="[d(hk)][d(ctrl)d(shift)]l[u(shift)u(ctrl)][u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column I to start hiding" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvElementArea="631, 257, 19, 19" CvTextArea="568, 246, 74, 15" CvTextArgument="Container" CvType="ArrowButton" DesignTimeRectangle="562, 232, 88, 44" DesignTimeScaleFactor="1" ElementType="Cell" FriendlyName="'Container'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I1' role='item' tableCol='8' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I1' role='item' automationid='' /&gt;" Guid="88de9fc6-77af-4adf-8715-18e13007b0ef" InformativeScreenshot="e558290c63c7e804ba58b8eadbc5038f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="602, 209, 6, 16" CvTextArgument="I" CvType="Text" DesignTimeRectangle="562, 204, 88, 28" FriendlyName="'I'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' automationid='' check:fulltext='I' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column J" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="868, 209, 10, 16" CvTextArgument="J" CvType="Text" DesignTimeRectangle="825, 204, 97, 28" DesignTimeScaleFactor="1" FriendlyName="'J'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' automationid='' check:fulltext='J' /&gt;" Guid="f8d36c73-b199-4743-be56-c17f6945c1f1" InformativeScreenshot="9cc4a9dbc29e7cb41826031c0c17ea01.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'edit Formula Bar'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column K" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="746, 209, 14, 16" CvTextArgument="K" CvType="Text" DesignTimeRectangle="562, 204, 381, 28" DesignTimeScaleFactor="1" FriendlyName="'K'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' automationid='' check:fulltext='K' /&gt;" Guid="58289760-875f-4542-8d94-e12d026e6359" InformativeScreenshot="5f71cb1bfedbd0b7ccfd2d7ccec450fe.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 174, 117, 13" CvTextArgument="Container Number" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Container Number'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column L" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="729, 209, 11, 16" CvTextArgument="L" CvType="Text" DesignTimeRectangle="562, 204, 345, 28" DesignTimeScaleFactor="1" FriendlyName="'L'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' automationid='' check:fulltext='L' /&gt;" Guid="cb66aa19-5099-4c9a-bf12-425dc491d0b4" InformativeScreenshot="6cc812201eb26bfca8d50ab174f1dba0.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 175, 39, 15" CvTextArgument="Origin" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Origin'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column M" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="644, 209, 18, 16" CvTextArgument="M" CvType="Text" DesignTimeRectangle="562, 204, 184, 28" DesignTimeScaleFactor="1" FriendlyName="'M'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' automationid='' check:fulltext='M' /&gt;" Guid="4574784e-3a55-4020-99f4-0c3dcba6ded5" InformativeScreenshot="ef00d3c92ac32354229f9215a5679a26.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 175, 73, 12" CvTextArgument="Destination" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Destination'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column N" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="647, 209, 15, 16" CvTextArgument="N" CvType="Text" DesignTimeRectangle="562, 204, 186, 28" DesignTimeScaleFactor="1" FriendlyName="'N'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' automationid='' check:fulltext='N' /&gt;" Guid="0fbf3a40-1c3e-4003-95db-f5e4e1de2053" InformativeScreenshot="ff9ecb7cc0ce5bc068ef1540313cc1ca.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 174, 60, 13" CvTextArgument="HouseBill" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'HouseBill'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column O" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="756, 209, 17, 16" CvTextArgument="O" CvType="Text" DesignTimeRectangle="562, 204, 407, 28" DesignTimeScaleFactor="1" FriendlyName="'O'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' automationid='' check:fulltext='O' /&gt;" Guid="792a7de7-7fba-410c-ab4d-5935e172dc5d" InformativeScreenshot="4980f3426c9b97dc6e4991dc1926005f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="262, 174, 67, 13" CvTextArgument="Master Bill" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Master Bill'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>
