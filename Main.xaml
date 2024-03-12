@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1177,2404" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -26,6 +26,15 @@
       <x:String>System.Windows.Markup</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -58,13 +67,162 @@
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,2339" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:DateTime" Name="TodaysDate">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="s:DateTime" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">DateTime.Today</CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Company: AFC Worldwide Ex" sap:VirtualizedContainerService.HintSize="484,2228" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1937" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Manage'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="118, 33, 49, 14" CvTextArgument="Manage" CvType="Text" DesignTimeRectangle="118, 33, 49, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Manage'" Guid="5bf046bf-992e-44a8-a8af-1ae5243b53cd" InformativeScreenshot="dad4f0fd304df49fb0e5cc6dd88bc3b4.png" ScopeSelectorArgument="&lt;wnd aaname='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' app='mstsc.exe' cls='RAIL_WINDOW' title='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Job Costing'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="226, 250, 27, 37" CvType="Icon" DesignTimeRectangle="224, 248, 31, 41" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'mstsc.exe CargoWise'" Guid="12e9c8e4-2313-48ee-b671-5eb2a259dd42" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB8AAAApCAYAAADNjfKJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFYSURBVFhH7ZNPSsNAHEa7Em8gnsMTeAVx5x28ggvxBt7ARYsIYnHRpbtuCtKNG1EbjH9qtRKaZtLJhK8ZMDjGL5hBMi7MD97mMZOXZJJWq+Phz6DSFVS6gkpXUOkKKl1BpSuotOFSIEhTFEelEie9Ed+TQ6UNTbwwTZzuyaHShiZemCZO9+RQaUMTL0wTp3tyqLTh38Y37yQiFl/EODirOb7jSyxYPBbYO60z3n5CZ/Y9rEeFITbaNcZX+nP4CY9PJ29Y+3V8EOLieoz14oW6U/RFyVOnCsOr+6/rGVSafHzNIpYYjkMc3WQ38y7xWvLEeiqdt4ZKk5JfqWxUtnbkPWP1p1euodLEMh7NQmwfVwhrqDSxiEshsH9eMayh0qRCXCkFfxJgq8o5m1Bp0n3B4YPAbaQwV583kSQKQSQxeAyw28vWVTnjIlS6gkpXUOkKKl1BpRM8LAHtktM0KsEMJQAAAABJRU5ErkJggg==" InformativeScreenshot="aacccc1f4ae5ceac43d830b0e93b6631.png" ScopeSelectorArgument="&lt;wnd aaname='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' app='mstsc.exe' cls='RAIL_WINDOW' title='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="195, 242, 92, 91" CvType="Button" DesignTimeRectangle="195, 242, 92, 91" ElementType="Button" FriendlyName="'mstsc.exe CargoWise'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reports'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="7, 372, 42, 14" CvTextArgument="Reports" CvType="Text" DesignTimeRectangle="7, 372, 42, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Reports'" Guid="e4f3bd64-16d3-428b-8cd7-6c1455c216e2" InformativeScreenshot="533f30d2be8fbd0b55d531bcb4a2a347.png" ScopeSelectorArgument="&lt;wnd aaname='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' app='mstsc.exe' cls='RAIL_WINDOW' title='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="195, 243, 91, 90" CvType="Button" DesignTimeRectangle="195, 243, 91, 90" ElementType="Button" FriendlyName="'mstsc.exe CargoWise'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Revenue and'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="40, 170, 398, 14" CvTextArgument="Revenue and Cost Suspense Control - Outstanding Trxns Summarized to Job Level" CvType="Text" DesignTimeRectangle="40, 170, 398, 14" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Revenue and'" Guid="365f27ae-dc8e-4cd8-a965-91e5cb89a309" InformativeScreenshot="40472bfa0cb90127ed7b0bc8203de344.png" ScopeSelectorArgument="&lt;wnd aaname='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' app='mstsc.exe' cls='RAIL_WINDOW' title='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="43, 40, 124, 14" CvTextArgument="Reports (Job Costing)" CvType="Text" DesignTimeRectangle="43, 40, 124, 14" ElementType="Text" FriendlyName="'Reports (Job Costing)'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Change Configuration" sap:VirtualizedContainerService.HintSize="388,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Shortcuts="[d(hk)][k(Tab)][u(hk)][d(hk)]a[u(hk)]" Version="V3">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable CvElementArea="16, 31, 105, 23" CvTextArea="44, 35, 70, 13" CvTextArgument="Primary Filters" CvType="Button" DesignTimeRectangle="15, 31, 84, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Primary Filters'" Guid="fe4fffc1-d24a-4c53-91d2-e2836b61b12b" InformativeScreenshot="2555ee5e987142fa691e127336fbc692.png" ScopeSelectorArgument="&lt;wnd aaname='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' app='mstsc.exe' cls='RAIL_WINDOW' title='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive" />
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"String for todays date: " + TodaysDate.ToString("dd/MMM/yyyy")</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type todays date Into 'Balance as at'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvElementArea="189, 99, 65, 22" CvType="InputBox" DesignTimeRectangle="190, 99, 64, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Balance as at'" Guid="d2a44e10-62cc-45ab-8db7-1763051906ee" InformativeScreenshot="df3bf03d682a05b0fd849f34a51a4ac5.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd aaname='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' app='mstsc.exe' cls='RAIL_WINDOW' title='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="119, 104, 69, 12" CvTextArgument="Balance as at" CvType="Text" DesignTimeRectangle="119, 104, 69, 12" ElementType="Text" FriendlyName="'Balance as at'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">TodaysDate.ToString("dd-MMM-yyyy")</CSharpValue>
+                </InArgument>
+              </uix:NTypeInto.Text>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Preview'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="426, 700, 74, 22" CvTextArea="442, 706, 40, 11" CvTextArgument="Preview" CvType="Button" DesignTimeRectangle="426, 700, 74, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Preview'" Guid="55671f4b-5583-48b3-9a9c-3d5ca3f3cb52" InformativeScreenshot="8d1b5e902ef80637f21ed5591b5b4da9.png" ScopeSelectorArgument="&lt;wnd aaname='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' app='mstsc.exe' cls='RAIL_WINDOW' title='Revenue and Cost Suspense Control - Outstanding Trxns Summarized*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArea="23, 440, 159, 14" CvTextArgument="Sort the report in this order" CvType="Text" DesignTimeRectangle="23, 440, 159, 14" ElementType="Text" FriendlyName="'Sort the'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Open in Excel'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e7621b1-3bdb-4be8-b0d4-b7cabbe25dc3" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="694, 37, 96, 21" CvTextArea="708, 41, 67, 13" CvTextArgument="Open in Excel" CvType="Button" DesignTimeRectangle="694, 37, 96, 21" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Open in Excel'" Guid="7a778989-a4d3-4b33-8eee-71d132ec877a" InformativeScreenshot="16b2eb8cc0787a69fb68ed7be722044a.png" ScopeSelectorArgument="&lt;wnd aaname='Preview - *** TEST SYSTEM *** - Branch: CORPORATE - Company: AFC*' app='mstsc.exe' cls='RAIL_WINDOW' title='Preview - *** TEST SYSTEM *** - Branch: CORPORATE - Company: AFC*' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="363, 36, 162, 23" CvType="InputBox" DesignTimeRectangle="363, 36, 162, 23" ElementType="InputBox" FriendlyName="'mstsc.exe Preview'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="2189, 121, 1382, 769" FilePath="C:\\Windows\\System32\\mstsc.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALhSURBVFhHxZdPSFRBHMd3l8JDf3TLCG95K+pQdPIg3YIu1aEMxMAOokF1sAhJDQIhIe+FtAbl4R3sj6ThJayoSNtcFcPAvbxWzdxd15LWKPPX7zczK7735v2Z1wu/8AHd38z8vm/ezG/mhTxL0yNIBdKM9CBxJCmgv+k3ilGbiOgVgDS9GLmG6Ah4hNqSmWIxig9pehipRzKILIkXqC+NERajepSmlyD9iGxQP9BYUTG6izS9DJkQHYOExiwTWWxELv9P8gIfEZuZ4O88kGmvvNwOVTXnINo5LItTDsma4ItF1kGJrV2jcLqmFs5Un4UdnUPSNki9yCrEt9q/rHbGtlgCjjVcYcldDFCuEpEdxfesrKEjm7unYE9HL+xr64bKxptrT+7BANFcSE4VTqXIrLE9NmJIaMbFAOXEislLp6yBK0X3J+HAjXsGDrXc9mqAqPA0/bsep6BuOAt3k0vQN51n3JlagrqhDJQ+ShnabukaUzGAr4EfIrIghJHr4zlYXlkFOzUlFgx9FA30kAE6yWRBaBnLsSTff/2BVjRycGAWdj5MQRTZ/2yWzcCJl/OGPooG4mSAjlNLkJLkf6/CT3z6wwNfLHE7FA0kbQ1UvUmzp4/he5fF7fBjQPoKWscXmYHqt2lLzAk/r0C6CDsmvzEDR57PWWJO+FmE0m3YNsFn4OjgV0vMCUUDbBtKC1ED7nvShXjWEnNC0QArRNJSTNuMNDi3bPjdDQUDnxFxebV5DZScdNFhFiKm/xUM4PQXZHMclz+dgen8CjNBZi59WICTr+bhOBaf8++z0Jv6Ae24Vtb38WjAdByTbC4kZOKFmAmzqEI3jvgqxaYLCcnlSra3fwZq32WgaTQHVxM5OPU6DbvxkDK324R3hPJbTxhFDz5Z4ojNlYzEL6V0cZR1DAKHS2lBG3otL4h/mPSJjkFAY5kWnZv4mtigT7P14rNBdcLPx6niUzuJV8yAP89Dob/O3F7g/ZQYXAAAAABJRU5ErkJggg==" InformativeScreenshot="83674cb34005b2e2c12da200c70c56f0.png" Selector="&lt;wnd aaname='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' app='mstsc.exe' cls='RAIL_WINDOW' title='CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*' /&gt;" Title="CargoWise One - *** TEST SYSTEM *** - Branch: CORPORATE - Compan*" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
   </Sequence>
 </Activity>
