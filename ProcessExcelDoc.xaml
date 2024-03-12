@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ProcessExcelDoc" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1177,4774" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessExcelDoc" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1177,2400" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>GlobalConstantsNamespace</x:String>
@@ -95,66 +95,67 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ProcessExcelDoc" sap:VirtualizedContainerService.HintSize="766,4709" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ProcessExcelDoc" sap:VirtualizedContainerService.HintSize="802,2335" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="704,4598" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="740,2224" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670,4511" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="706,2137" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="608,4400" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="input\\26e3c7109f1c4b488f2190ffde9d2ec4.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="644,2026" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="input\\26e3c7109f1c4b488f2190ffde9d2ec4.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence sap2010:Annotation.AnnotationText="Delete lines above header" DisplayName="Clean up Columns/Rows" sap:VirtualizedContainerService.HintSize="574,4127" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence sap2010:Annotation.AnnotationText="Delete lines above header" DisplayName="Clean up Columns/Rows" sap:VirtualizedContainerService.HintSize="610,1753" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:DeleteColumnX ColumnName="A:C" DisplayName="Delete Column" HasHeaders="False" sap:VirtualizedContainerService.HintSize="512,162" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1">
+                    <ueab:DeleteColumnX ColumnName="A:C" DisplayName="Delete Column" HasHeaders="False" sap:VirtualizedContainerService.HintSize="548,162" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1">
                       <ueab:DeleteColumnX.Range>
                         <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
                           <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">Excel.Sheet["Detail"]</CSharpValue>
                         </InArgument>
                       </ueab:DeleteColumnX.Range>
                     </ueab:DeleteColumnX>
-                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="512,140" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" RowPositions="1-8">
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450,140" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" RowPositions="1-8">
                       <ueab:DeleteRowsX.Range>
                         <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
                           <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Excel.Sheet["Detail"]</CSharpValue>
                         </InArgument>
                       </ueab:DeleteRowsX.Range>
                     </ueab:DeleteRowsX>
-                    <ueab:AutoFitX Columns="True" DisplayName="Autofix cell formatting" sap:VirtualizedContainerService.HintSize="512,117" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Rows="True">
+                    <ueab:AutoFitX Columns="True" DisplayName="Autofix cell formatting" sap:VirtualizedContainerService.HintSize="548,117" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Rows="True">
                       <ueab:AutoFitX.Range>
                         <InArgument x:TypeArguments="ue:IReadRangeRef">
                           <CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">Excel.Sheet["Detail"]</CSharpValue>
                         </InArgument>
                       </ueab:AutoFitX.Range>
                     </ueab:AutoFitX>
-                    <Sequence sap2010:Annotation.AnnotationText="Steps 3 and 4" DisplayName="Format Column headers and hide rows" sap:VirtualizedContainerService.HintSize="512,3446" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence sap2010:Annotation.AnnotationText="Steps 3 and 4" DisplayName="Format Column headers and hide rows" sap:VirtualizedContainerService.HintSize="548,56" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Job Number'" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Job Number'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Excel</CSharpValue>
@@ -170,174 +171,721 @@
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Toggle on Filters on row headers" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="Excel" Shortcuts="[d(hk)][d(ctrl)d(shift)]l[u(shift)u(ctrl)][u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Toggle on Filters on row headers" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="Excel" Shortcuts="[d(hk)][d(ctrl)d(shift)]l[u(shift)u(ctrl)][u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column I to start hiding" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column I to start hiding" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvElementArea="631, 257, 19, 19" CvTextArea="568, 246, 74, 15" CvTextArgument="Container" CvType="ArrowButton" DesignTimeRectangle="562, 232, 88, 44" DesignTimeScaleFactor="1" ElementType="Cell" FriendlyName="'Container'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I1' role='item' tableCol='8' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I1' role='item' automationid='' /&gt;" Guid="88de9fc6-77af-4adf-8715-18e13007b0ef" InformativeScreenshot="e558290c63c7e804ba58b8eadbc5038f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="744, 209, 6, 16" CvTextArgument="I" CvType="Text" DesignTimeRectangle="704, 204, 88, 28" DesignTimeScaleFactor="1" FriendlyName="'I'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' automationid='' check:fulltext='I' /&gt;" Guid="5414eb9c-aee6-4765-bbe5-3bfa9c3eceba" InformativeScreenshot="3bcd4f28e99e2c7c35cc64c9db6bd134.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="602, 209, 6, 16" CvTextArgument="I" CvType="Text" DesignTimeRectangle="562, 204, 88, 28" FriendlyName="'I'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.XLSX' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='I' role='header item' automationid='' check:fulltext='I' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column J" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column J" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="868, 209, 10, 16" CvTextArgument="J" CvType="Text" DesignTimeRectangle="825, 204, 97, 28" DesignTimeScaleFactor="1" FriendlyName="'J'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' automationid='' check:fulltext='J' /&gt;" Guid="f8d36c73-b199-4743-be56-c17f6945c1f1" InformativeScreenshot="9cc4a9dbc29e7cb41826031c0c17ea01.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="874, 209, 9, 16" CvTextArgument="J" CvType="Text" DesignTimeRectangle="704, 204, 352, 28" DesignTimeScaleFactor="1" FriendlyName="'J'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='J' role='header item' automationid='' check:fulltext='J' /&gt;" Guid="6fbcb44c-d198-404f-bbfc-1186ba787b9f" InformativeScreenshot="c961a56539cbaa3334e82e5d8073bed5.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'edit Formula Bar'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column K" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column K" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="746, 209, 14, 16" CvTextArgument="K" CvType="Text" DesignTimeRectangle="562, 204, 381, 28" DesignTimeScaleFactor="1" FriendlyName="'K'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' automationid='' check:fulltext='K' /&gt;" Guid="58289760-875f-4542-8d94-e12d026e6359" InformativeScreenshot="5f71cb1bfedbd0b7ccfd2d7ccec450fe.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="746, 209, 14, 16" CvTextArgument="K" CvType="Text" DesignTimeRectangle="704, 204, 381, 28" DesignTimeScaleFactor="1" FriendlyName="'K'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='K' role='header item' automationid='' check:fulltext='K' /&gt;" Guid="58289760-875f-4542-8d94-e12d026e6359" InformativeScreenshot="cec38709e10a9e799a3787d737ea04c9.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="262, 174, 117, 13" CvTextArgument="Container Number" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Container Number'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column L" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column L" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="729, 209, 11, 16" CvTextArgument="L" CvType="Text" DesignTimeRectangle="562, 204, 345, 28" DesignTimeScaleFactor="1" FriendlyName="'L'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' automationid='' check:fulltext='L' /&gt;" Guid="cb66aa19-5099-4c9a-bf12-425dc491d0b4" InformativeScreenshot="6cc812201eb26bfca8d50ab174f1dba0.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="871, 209, 11, 16" CvTextArgument="L" CvType="Text" DesignTimeRectangle="704, 204, 345, 28" DesignTimeScaleFactor="1" FriendlyName="'L'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='L' role='header item' automationid='' check:fulltext='L' /&gt;" Guid="432ef02e-53c2-488c-a387-479bdda1ceb3" InformativeScreenshot="337f98853ec9433f98959fadf1e46527.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="262, 175, 39, 15" CvTextArgument="Origin" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Origin'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column M" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column M" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="644, 209, 18, 16" CvTextArgument="M" CvType="Text" DesignTimeRectangle="562, 204, 184, 28" DesignTimeScaleFactor="1" FriendlyName="'M'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' automationid='' check:fulltext='M' /&gt;" Guid="4574784e-3a55-4020-99f4-0c3dcba6ded5" InformativeScreenshot="ef00d3c92ac32354229f9215a5679a26.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="644, 209, 18, 16" CvTextArgument="M" CvType="Text" DesignTimeRectangle="704, 204, 184, 28" DesignTimeScaleFactor="1" FriendlyName="'M'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='M' role='header item' automationid='' check:fulltext='M' /&gt;" Guid="4574784e-3a55-4020-99f4-0c3dcba6ded5" InformativeScreenshot="75bcc664ee8dbbd5a736edb7c6bdad4c.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="262, 175, 73, 12" CvTextArgument="Destination" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Destination'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_7" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column N" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column N" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="647, 209, 15, 16" CvTextArgument="N" CvType="Text" DesignTimeRectangle="562, 204, 186, 28" DesignTimeScaleFactor="1" FriendlyName="'N'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' automationid='' check:fulltext='N' /&gt;" Guid="0fbf3a40-1c3e-4003-95db-f5e4e1de2053" InformativeScreenshot="ff9ecb7cc0ce5bc068ef1540313cc1ca.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="647, 209, 15, 16" CvTextArgument="N" CvType="Text" DesignTimeRectangle="704, 204, 186, 28" DesignTimeScaleFactor="1" FriendlyName="'N'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='N' role='header item' automationid='' check:fulltext='N' /&gt;" Guid="0fbf3a40-1c3e-4003-95db-f5e4e1de2053" InformativeScreenshot="b597ee3d3702d7f5136cf0c3b1a24018.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="262, 174, 60, 13" CvTextArgument="HouseBill" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'HouseBill'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column O" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Column O" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="Excel" Version="V3">
                         <uix:NClick.InScope>
                           <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Excel</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">Excel</CSharpValue>
                           </InArgument>
                         </uix:NClick.InScope>
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable CvTextArea="756, 209, 17, 16" CvTextArgument="O" CvType="Text" DesignTimeRectangle="562, 204, 407, 28" DesignTimeScaleFactor="1" FriendlyName="'O'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' automationid='' check:fulltext='O' /&gt;" Guid="792a7de7-7fba-410c-ab4d-5935e172dc5d" InformativeScreenshot="4980f3426c9b97dc6e4991dc1926005f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable CvTextArea="898, 208, 17, 17" CvTextArgument="O" CvType="Text" DesignTimeRectangle="704, 204, 407, 28" DesignTimeScaleFactor="1" FriendlyName="'O'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='O' role='header item' automationid='' check:fulltext='O' /&gt;" Guid="4ffead2f-3290-4248-a6e7-4ed7335fefb4" InformativeScreenshot="09a1bf27e95f214bdc03cb2ead155bee.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                <uix:Target CvTextArea="262, 174, 67, 13" CvTextArgument="Master Bill" CvType="Text" DesignTimeRectangle="251, 158, 1188, 46" ElementType="InputBox" FriendlyName="'Master Bill'" FullSelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='FormulaBar' name='Formula Bar' role='edit' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="648, 209, 14, 16" CvTextArgument="H" CvType="Text" DesignTimeRectangle="608, 204, 96, 28" FriendlyName="'H'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' tableCol='8' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='H' role='header item' automationid='' check:fulltext='H' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="572, 208, 16, 17" CvTextArgument="G" CvType="Text" DesignTimeRectangle="553, 204, 55, 28" FriendlyName="'G'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' tableCol='7' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='G' role='header item' automationid='' check:fulltext='G' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NClick.Target>
                       </uix:NClick>
-                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="450,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Hide" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" ScopeIdentifier="Excel" Shortcuts="[d(hk)]h[u(hk)]" Version="V3">
                         <uix:NKeyboardShortcuts.InScope>
                           <InArgument x:TypeArguments="x:Object">
                             <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">Excel</CSharpValue>
                           </InArgument>
                         </uix:NKeyboardShortcuts.InScope>
                       </uix:NKeyboardShortcuts>
+                    </Sequence>
+                    <Sequence sap2010:Annotation.AnnotationText="Step 5, filtering and clearing column E" DisplayName="Filtering and clearing out rows" sap:VirtualizedContainerService.HintSize="548,56" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'E'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvElementArea="453, 257, 18, 18" CvType="ArrowButton" DesignTimeRectangle="454, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'No filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' tableCol='5' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' check:fulltext='No filter applied' /&gt;" Guid="b8bf39a6-a7ef-48dd-aeef-01e3672bbe49" InformativeScreenshot="c4567b98221ec585abc5d8fd9c0ff36a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="444, 209, 11, 16" CvTextArgument="E" CvType="Text" DesignTimeRectangle="426, 204, 46, 28" FriendlyName="'E'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' tableCol='5' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' automationid='' check:fulltext='E' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clear Filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="269, 452, 56, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Select All)'" FullSelectorArgument="&lt;uia name='(Select All)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Select All)' role='check box' automationid='' check:fulltext='(Select All)' /&gt;" Guid="958216e1-b232-41b6-a32c-3774c2a1f577" InformativeScreenshot="7b298c4c2976365737758b9d7398fd01.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add TOT to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="192, 550, 93, 14" CvTextArgument="ATL00085134" CvType="Text" DesignTimeRectangle="269, 548, 25, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'TOT'" FullSelectorArgument="&lt;uia name='TOT' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='TOT' role='check box' automationid='' check:fulltext='TOT' /&gt;" Guid="42132d76-025b-408d-b72b-dd4957726473" InformativeScreenshot="cd0f8cc6bc76909703acc29292363ddc.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="191, 286, 276, 14" CvTextArgument="ATL00083955 WRK ATL WFS" CvType="Text" DesignTimeRectangle="204, 275, 266, 24" FriendlyName="'Sort A to Z'" FullSelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort A to Z' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort A to Z' role='Menu Item' automationid='' check:fulltext='Sort A to Z' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                            <uix:TargetAnchorable.PointOffset>
+                              <uix:PointOffset X="-4" />
+                            </uix:TargetAnchorable.PointOffset>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add WFS to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="269, 564, 27, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'WFS'" FullSelectorArgument="&lt;uia name='WFS' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='WFS' role='check box' automationid='' check:fulltext='WFS' /&gt;" Guid="0eb2902e-f322-41c2-b2dc-f8b22132e64f" InformativeScreenshot="8b92e76493345d005bb8579672668685.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add WTP to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="189, 579, 99, 14" CvTextArgument="OCF00024463" CvType="Text" DesignTimeRectangle="269, 580, 27, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'WTP'" FullSelectorArgument="&lt;uia name='WTP' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='WTP' role='check box' automationid='' check:fulltext='WTP' /&gt;" Guid="1f5e4a98-8ae3-4863-bdb0-984518cd5c4b" InformativeScreenshot="16e918e68867a3431dc74fdad573070a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add blanks to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="269, 596, 43, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Blanks)'" FullSelectorArgument="&lt;uia name='(Blanks)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Blanks)' role='check box' automationid='' check:fulltext='(Blanks)' /&gt;" Guid="8ec0452e-9ec4-45ae-9dbc-4fbfc1739861" InformativeScreenshot="d3ade20874ea9fb0e4b0289353a1bd11.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK' to apply filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" Guid="6bae0b3d-6bb4-4180-a487-9e44e4589053" InformativeScreenshot="4fdb03022e18116a4ec3ca45ae8ba198.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target DesignTimeRectangle="269, 596, 43, 16" ElementType="CheckBox" FriendlyName="'(Blanks)'" FullSelectorArgument="&lt;uia name='(Blanks)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Blanks)' role='check box' automationid='' check:fulltext='(Blanks)' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                <uix:Target CvTextArea="376, 636, 91, 15" CvTextArgument="LAX WTP" CvType="Text" DesignTimeRectangle="389, 634, 75, 23" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' role='Button' automationid='' check:fulltext='Cancel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click highlight all cells" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="1, 204, 40, 28" DesignTimeScaleFactor="1" FriendlyName="'Select All'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Select All' role='header item' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Select All' role='header item' automationid='' check:fulltext='Select All' /&gt;" Guid="133bf2d3-dfba-4295-ba6e-6188e14aac53" InformativeScreenshot="938155575903d23e40680448158c6682.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="104, 209, 15, 16" CvTextArgument="A" CvType="Text" DesignTimeRectangle="41, 204, 142, 28" FriendlyName="'A'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' automationid='' check:fulltext='A' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="15, 252, 9, 16" CvTextArgument="1" CvType="Text" DesignTimeRectangle="1, 232, 40, 44" FriendlyName="'1'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' tableCol='0' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' automationid='' check:fulltext='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Deselect header row" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="Ctrl" MouseButton="Middle" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvTextArea="15, 289, 11, 16" CvTextArgument="2" CvType="Text" DesignTimeRectangle="1, 276, 40, 35" DesignTimeScaleFactor="1" FriendlyName="'2'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='2' role='header item' tableCol='0' tableRow='2' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='2' role='header item' automationid='' check:fulltext='2' /&gt;" Guid="41c29af7-4843-4e3f-9ff9-eb0e1897f56a" InformativeScreenshot="85ac39c5fec7b0763a99447a2bddc007.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="15, 252, 9, 16" CvTextArgument="1" CvType="Text" DesignTimeRectangle="1, 232, 40, 44" FriendlyName="'1'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' tableCol='0' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' automationid='' check:fulltext='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="104, 209, 15, 16" CvTextArgument="A" CvType="Text" DesignTimeRectangle="41, 204, 142, 28" FriendlyName="'A'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' automationid='' check:fulltext='A' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Delete excel rows" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_10" ScopeIdentifier="Excel" Shortcuts="[d(hk)][k(del)][u(hk)]" Version="V3">
+                        <uix:NKeyboardShortcuts.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NKeyboardShortcuts.InScope>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Open the filter menu" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="454, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'Filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' tableCol='5' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='Filter applied' role='menu item' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' /&gt;&lt;uia automationid='Dropdown' name='Filter applied' role='menu item' check:fulltext='Filter applied' /&gt;" Guid="53b2e693-0470-48fe-a936-2a54095373a3" InformativeScreenshot="9246a25d6d769a294dd911c15069348a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="444, 209, 11, 16" CvTextArgument="E" CvType="Text" DesignTimeRectangle="426, 204, 46, 28" FriendlyName="'E'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' tableCol='5' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' automationid='' check:fulltext='E' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clear the filters" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="269, 452, 56, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Select All)'" FullSelectorArgument="&lt;uia name='(Select All)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Select All)' role='check box' automationid='' check:fulltext='(Select All)' /&gt;" Guid="45008198-142f-46b0-8c94-6686cbd09c87" InformativeScreenshot="5a57ac5e5bc56a292e131882021a4b70.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                <uix:Target DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="305, 634, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" Guid="69cd816c-0aed-482b-b703-3a4c40b4777c" InformativeScreenshot="9ac77cf59485023364caa54b97d7173f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="548,246" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                      <ui:CommentOut.Body>
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,167" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence sap2010:Annotation.AnnotationText="Step 7, filtering out column C" DisplayName="Filtering and clearing out rows" sap:VirtualizedContainerService.HintSize="450,56" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'C'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvElementArea="342, 257, 19, 19" CvType="ArrowButton" DesignTimeRectangle="343, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'No filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='C1' role='item' tableCol='3' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='C1' role='item' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' check:fulltext='No filter applied' /&gt;" Guid="e8a82bb7-7886-4e59-90da-a96f9dd124f1" InformativeScreenshot="20ab9b519d1d244fdde54157d93f9c92.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvElementArea="298, 203, 63, 29" CvTextArea="323, 209, 14, 16" CvTextArgument="C" CvType="Button" DesignTimeRectangle="300, 204, 61, 28" FriendlyName="'C'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='C' role='header item' tableCol='3' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='C' role='header item' automationid='' check:fulltext='C' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="235, 209, 13, 16" CvTextArgument="B" CvType="Text" DesignTimeRectangle="183, 204, 117, 28" FriendlyName="'B'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='B' role='header item' tableCol='2' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='B' role='header item' automationid='' check:fulltext='B' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clear Filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="158, 452, 56, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Select All)'" FullSelectorArgument="&lt;uia name='(Select All)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Select All)' role='check box' automationid='' check:fulltext='(Select All)' /&gt;" Guid="2694c811-430d-4ca0-8594-27ba00d098a5" InformativeScreenshot="239c85036603fed1e2f2d3a5da772ff1.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="194, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                      <uix:Target DesignTimeRectangle="124, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add TOT to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArea="192, 550, 93, 14" CvTextArgument="ATL00085134" CvType="Text" DesignTimeRectangle="269, 548, 25, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'TOT'" FullSelectorArgument="&lt;uia name='TOT' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='TOT' role='check box' automationid='' check:fulltext='TOT' /&gt;" Guid="42132d76-025b-408d-b72b-dd4957726473" InformativeScreenshot="cd0f8cc6bc76909703acc29292363ddc.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                      <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="191, 286, 276, 14" CvTextArgument="ATL00083955 WRK ATL WFS" CvType="Text" DesignTimeRectangle="204, 275, 266, 24" FriendlyName="'Sort A to Z'" FullSelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort A to Z' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort A to Z' role='Menu Item' automationid='' check:fulltext='Sort A to Z' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                  <uix:TargetAnchorable.PointOffset>
+                                    <uix:PointOffset X="-4" />
+                                  </uix:TargetAnchorable.PointOffset>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add WFS to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="269, 564, 27, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'WFS'" FullSelectorArgument="&lt;uia name='WFS' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='WFS' role='check box' automationid='' check:fulltext='WFS' /&gt;" Guid="0eb2902e-f322-41c2-b2dc-f8b22132e64f" InformativeScreenshot="8b92e76493345d005bb8579672668685.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add WTP to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_26" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArea="189, 579, 99, 14" CvTextArgument="OCF00024463" CvType="Text" DesignTimeRectangle="269, 580, 27, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'WTP'" FullSelectorArgument="&lt;uia name='WTP' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='WTP' role='check box' automationid='' check:fulltext='WTP' /&gt;" Guid="1f5e4a98-8ae3-4863-bdb0-984518cd5c4b" InformativeScreenshot="16e918e68867a3431dc74fdad573070a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Add blanks to filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="269, 596, 43, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Blanks)'" FullSelectorArgument="&lt;uia name='(Blanks)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Blanks)' role='check box' automationid='' check:fulltext='(Blanks)' /&gt;" Guid="8ec0452e-9ec4-45ae-9dbc-4fbfc1739861" InformativeScreenshot="d3ade20874ea9fb0e4b0289353a1bd11.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK' to apply filter" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArea="308, 637, 39, 14" CvTextArgument="WRK" CvType="Text" DesignTimeRectangle="305, 634, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" Guid="6bae0b3d-6bb4-4180-a487-9e44e4589053" InformativeScreenshot="4fdb03022e18116a4ec3ca45ae8ba198.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                                      <uix:Target CvTextArea="308, 434, 97, 14" CvTextArgument="WRK ATL" CvType="Text" DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target DesignTimeRectangle="269, 596, 43, 16" ElementType="CheckBox" FriendlyName="'(Blanks)'" FullSelectorArgument="&lt;uia name='(Blanks)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Blanks)' role='check box' automationid='' check:fulltext='(Blanks)' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                      <uix:Target CvTextArea="376, 636, 91, 15" CvTextArgument="LAX WTP" CvType="Text" DesignTimeRectangle="389, 634, 75, 23" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='Cancel' role='Button' automationid='' check:fulltext='Cancel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click highlight all cells" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_29" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="1, 204, 40, 28" DesignTimeScaleFactor="1" FriendlyName="'Select All'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Select All' role='header item' tableCol='0' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Select All' role='header item' automationid='' check:fulltext='Select All' /&gt;" Guid="133bf2d3-dfba-4295-ba6e-6188e14aac53" InformativeScreenshot="938155575903d23e40680448158c6682.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target CvTextArea="104, 209, 15, 16" CvTextArgument="A" CvType="Text" DesignTimeRectangle="41, 204, 142, 28" FriendlyName="'A'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' automationid='' check:fulltext='A' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="15, 252, 9, 16" CvTextArgument="1" CvType="Text" DesignTimeRectangle="1, 232, 40, 44" FriendlyName="'1'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' tableCol='0' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' automationid='' check:fulltext='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Deselect header row" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="HardwareEvents" KeyModifiers="Ctrl" MouseButton="Middle" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable CvTextArea="15, 289, 11, 16" CvTextArgument="2" CvType="Text" DesignTimeRectangle="1, 276, 40, 35" DesignTimeScaleFactor="1" FriendlyName="'2'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='2' role='header item' tableCol='0' tableRow='2' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='2' role='header item' automationid='' check:fulltext='2' /&gt;" Guid="41c29af7-4843-4e3f-9ff9-eb0e1897f56a" InformativeScreenshot="85ac39c5fec7b0763a99447a2bddc007.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target CvTextArea="15, 252, 9, 16" CvTextArgument="1" CvType="Text" DesignTimeRectangle="1, 232, 40, 44" FriendlyName="'1'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' tableCol='0' tableRow='1' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='1' role='header item' automationid='' check:fulltext='1' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                      <uix:Target CvTextArea="104, 209, 15, 16" CvTextArgument="A" CvType="Text" DesignTimeRectangle="41, 204, 142, 28" FriendlyName="'A'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' tableCol='1' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='A' role='header item' automationid='' check:fulltext='A' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Delete excel rows" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_11" ScopeIdentifier="Excel" Shortcuts="[d(hk)][k(del)][u(hk)]" Version="V3">
+                              <uix:NKeyboardShortcuts.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NKeyboardShortcuts.InScope>
+                            </uix:NKeyboardShortcuts>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Open the filter menu" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_31" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="454, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'Filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' tableCol='5' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='Filter applied' role='menu item' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E1' role='item' /&gt;&lt;uia automationid='Dropdown' name='Filter applied' role='menu item' check:fulltext='Filter applied' /&gt;" Guid="53b2e693-0470-48fe-a936-2a54095373a3" InformativeScreenshot="9246a25d6d769a294dd911c15069348a.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CvTextArea="444, 209, 11, 16" CvTextArgument="E" CvType="Text" DesignTimeRectangle="426, 204, 46, 28" FriendlyName="'E'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' tableCol='5' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='E' role='header item' automationid='' check:fulltext='E' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clear the filters" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_32" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="269, 452, 56, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Select All)'" FullSelectorArgument="&lt;uia name='(Select All)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Select All)' role='check box' automationid='' check:fulltext='(Select All)' /&gt;" Guid="45008198-142f-46b0-8c94-6686cbd09c87" InformativeScreenshot="5a57ac5e5bc56a292e131882021a4b70.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                      <uix:Target DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                      <uix:Target DesignTimeRectangle="305, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_33" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                              <uix:NClick.InScope>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">Excel</CSharpValue>
+                                </InArgument>
+                              </uix:NClick.InScope>
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="305, 634, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" Guid="69cd816c-0aed-482b-b703-3a4c40b4777c" InformativeScreenshot="9ac77cf59485023364caa54b97d7173f.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target DesignTimeRectangle="235, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </Sequence>
+                      </ui:CommentOut.Body>
+                    </ui:CommentOut>
+                    <Sequence sap2010:Annotation.AnnotationText="Step 8" DisplayName="Filtering out column T" sap:VirtualizedContainerService.HintSize="548,56" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click filter for 'T'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_34" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvElementArea="1178, 256, 19, 19" CvType="ArrowButton" DesignTimeRectangle="1179, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'No filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='T1' role='item' tableCol='13' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='T1' role='item' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' check:fulltext='No filter applied' /&gt;" Guid="d1131d0c-c2d7-4499-9a6c-287a2031501e" InformativeScreenshot="d8f225636140c6641887e762daa6ec95.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="1148, 209, 13, 16" CvTextArgument="T" CvType="Text" DesignTimeRectangle="1113, 204, 84, 28" FriendlyName="'T'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='T' role='header item' tableCol='13' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='T' role='header item' automationid='' check:fulltext='T' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="1050, 209, 13, 16" CvTextArgument="S" CvType="Text" DesignTimeRectangle="1001, 204, 112, 28" FriendlyName="'S'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='S' role='header item' tableCol='12' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='S' role='header item' automationid='' check:fulltext='S' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Uncheck blanks" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_35" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="994, 500, 43, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'(Blanks)'" FullSelectorArgument="&lt;uia name='(Blanks)' role='check box' /&gt;" FuzzySelectorArgument="&lt;uia name='(Blanks)' role='check box' automationid='' check:fulltext='(Blanks)' /&gt;" Guid="7ae9756a-fb38-427d-9495-6765ccc354e7" InformativeScreenshot="638e58a21aea21f6e0976c195f2a0698.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="1030, 634, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                <uix:Target DesignTimeRectangle="960, 428, 212, 19" FriendlyName="'Search'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                    <Sequence sap2010:Annotation.AnnotationText="Filtering out column Q" DisplayName="" sap:VirtualizedContainerService.HintSize="548,498" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Q'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_36" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable CvElementArea="859, 257, 19, 19" CvType="ArrowButton" DesignTimeRectangle="860, 257, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'No filter applied'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Q1' role='item' tableCol='10' tableRow='1' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Q1' role='item' /&gt;&lt;uia automationid='Dropdown' name='No filter applied' role='menu item' check:fulltext='No filter applied' /&gt;" Guid="bced53f1-1f12-4e9e-8ab3-7d54324416c2" InformativeScreenshot="40b9917e0f796ac1eba963c2cadb51e2.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvTextArea="827, 209, 18, 18" CvTextArgument="Q" CvType="Text" DesignTimeRectangle="794, 204, 84, 28" FriendlyName="'Q'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Q' role='header item' tableCol='10' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='Q' role='header item' automationid='' check:fulltext='Q' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                                <uix:Target CvTextArea="743, 209, 12, 16" CvTextArgument="P" CvType="Text" DesignTimeRectangle="704, 204, 90, 28" FriendlyName="'P'" FullSelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='P' role='header item' tableCol='9' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;uia automationid='26e3c7109f1c4b488f2190ffde9d2ec4.xlsx' cls='ExcelGrid' name='26e3c7109f1c4b488f2190ffde9d2ec4' /&gt;&lt;uia automationid='Grid' name='Grid' role='data grid' /&gt;&lt;uia name='P' role='header item' automationid='' check:fulltext='P' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Sort newest to oldest." sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="Excel" Version="V3">
+                        <uix:NClick.InScope>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">Excel</CSharpValue>
+                          </InArgument>
+                        </uix:NClick.InScope>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="610, 299, 266, 24" DesignTimeScaleFactor="1" FriendlyName="'Sort Newest to Oldest'" FullSelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort Newest to Oldest' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITWMenuItemGroup' /&gt;&lt;uia cls='NetUITWBtnCheckMenuItem' name='Sort Newest to Oldest' role='Menu Item' automationid='' check:fulltext='Sort Newest to Oldest' /&gt;" Guid="fce9c7cd-df15-4a6e-bbf6-95ce236ba368" InformativeScreenshot="34af9b6a7411eb4c0b2bc5ab241f32d0.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='26e3c7109f1c4b488f2190ffde9d2ec4 - Excel' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="641, 428, 198, 19" FriendlyName="'Search (All)'" FullSelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUITextbox' name='Type words to search for' role='Edit Box' automationid='' check:text='Search (All)' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                <uix:Target DesignTimeRectangle="711, 635, 75, 23" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;uia cls='NetUIButton' name='OK' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIButton' name='OK' role='Button' automationid='' check:fulltext='OK' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
                     </Sequence>
                   </Sequence>
                 </ActivityAction>
